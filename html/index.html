@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <!-- Header -->
+    <link rel = "icon" href = "../pictures/logo.png" type = "image/x-icon">
+    <title>XWEN</title>
+</head>
+
+<html lang="en-us">
+    <body>
+        <section class="main">
+            <!-- Main Menu -->
+            <div class="menu w-100">
+                <div class="row d-flex align-items-center py-4 px-lg-5">
+                    <!-- Logo -->
+                    <img class="logo" src="../pictures/logo-white.png" alt="logo">
+                    <h1 class="text-logo">XWEN</h1>
+                    <ul class="menu-items row py-2 mx-2">
+                        <li class="menu-item mx-3"><a title="home" class="link" href=#>Home</a></li>
+                        <li class="menu-item mx-3"><a title="about" class="link" href="#about">About Us</a></li>
+                        <li class="menu-item mx-3"><a title="projects" class="link" href="#">Projects</a></li>
+                        <li class="menu-item mx-3"><a title="Our story" class="link" href="#">Our Story</a></li>
+                    </ul><!-- End Menu-Items -->
+                    <!-- Mobiile Menu -->
+                    <ul class="mobile-menu-items py-2" id="mobile-menu">
+                        <li class="menu-item p-1"><a title="home" class="link" href=#>Home</a></li>
+                        <li class="menu-item p-1"><a title="about" class="link" href="#about">About Us</a></li>
+                        <li class="menu-item p-1"><a title="projects" class="link" href="#">Projects</a></li>
+                        <li class="menu-item p-1"><a title="Our story" class="link" href="#">Our Story</a></li>
+                        <li class="menu-item d-flex align-items-center p-1 mt-2">
+                            <a title="fb" class="social-link d-flex justify-content-center" href="#"><i class="fa fa-facebook mx-1 p-1"></i></a>
+                            <a title="inst" class="social-link d-flex justify-content-center" href="#"><i class="fa fa-instagram mx-1 p-1"></i></a>
+                        </li>
+                    </ul><!-- End Mobile-menu-Items -->
+                    <!-- Hamburger Button -->
+                    <a title="menu-button" class="menu-btn" href="#" id="ham-btn"><i class="fa fa-bars"></i></a>
+                    <div class="social-icons row">
+                        <a title="fb" class="social-link d-flex justify-content-center" href="#"><i class="fa fa-facebook mx-1"></i></a>
+                        <a title="inst" class="social-link d-flex justify-content-center" href="#"><i class="fa fa-instagram mx-1"></i></a>
+                    </div>
+                </div><!-- End Row -->
+            </div><!-- End Menu -->
+            <div class="header d-flex align-items-center w-100">
+                <div class="prev slider-control mx-2" id="prev"></div>
+                <div class="intro align-items-center">
+                    <div class="intro-text col-lg-6">
+                        <h3 class="py-2">Welcome To XWEN</h3>
+                        <h2 class="py-2">Building Digital Dreams, One Line of Code at a Time!</h2>
+                        <h2 class="py-2">You Dream It, We Build It. Your Dreams Are Like Pieces Of Puzzles. We Just Bring All The Pieces Together.</h2>
+                    </div><!-- End Intro-Text -->
+                </div><!-- End Intro -->
+                <div class="intro align-items-center">
+                    <div class="intro-text col-lg-7">
+                        <h3 class="py-2">The New Era of AI</h3>
+                        <h2 class="py-2">We recognize that AI has ushered in a transformative era, becoming an indispensable element in crafting cutting-edge web applications.</h2>
+                    </div><!-- End Intro-Text -->
+                </div><!-- End Intro -->
+                <div class="intro align-items-center">
+                    <div class="intro-text col-lg-7">
+                        <h3 class="py-2">Our Team</h3>
+                        <h2 class="py-2">With a passion for crafting captivating digital experiences, our skilled developers bring expertise, innovation, and creativity to every project they touch.</h2>
+                    </div><!-- End Intro-Text -->
+                </div><!-- End Intro -->
+                <div class="next slider-control mx-2" id="next"></div>
+            </div><!-- End Header -->
+        </section><!-- End Main -->
+        <!-- Chat Bot -->
+        <section class="chatbot">
+            <div class="container">
+                <div class="chat-box" id="bot-box">
+                    <div class="col-lg-3 py-3" id="bot">
+                        <div class="bot-text container-flex">
+                            <p class="text-light py-2 px-2"> 
+                              Welcome to our website's interactive chatbot, your friendly and knowledgeable virtual assistant! 
+                            </p>
+                        </div><!-- End Bot-Text -->
+                        <div class="bot-text container-flex">
+                            <p class="text-light py-2 px-2">
+                                Lets talk business, what kind of website you are looking for?
+                            </p>
+                        </div><!-- End Bot-Text -->
+                    </div><!-- End Col -->
+                    <form class="chat-form py-2 px-2">
+                        <input class="py-2" type="text" id="msg" placeholder="type your message">
+                    </form><!-- End Chat-Form -->
+                    <button class="chat-submit mx-2" title="submit" id="msg-submit" onclick="read_input()"><i class="fa fa-paper-plane py-1"></i></button>
+                </div><!-- End Chat-Box -->
+                <button class="chat-btn py-4" title="chatbot" id="bot-btn"></button>
+            </div><!-- End Container -->
+        </section><!-- End ChatBot-->
+        <!-- About Us -->
+        <section class="about-us" id="about">
+            <div class="container-flex py-4 px-lg-5" id="main-h">
+                <h1 class="py-2">XWEN:  Uniting Digital Puzzle Pieces for Tomorrow's Triumph</h1>
+            </div><!-- End Container-Flex-->
+            <div class="tabs container d-flex justify-content-center align-items-center py-2">
+               <button class="tab-btn mx-2">INTRO</button>
+               <button class="tab-btn mx-2">JOURNEY</button>
+               <button class="tab-btn mx-2">SERVICES</button>
+               <button class="tab-btn mx-2">WHY US?</button>
+            </div><!-- End Tabs -->
+            <div class="about-content row">
+                <div class="content col-lg-6" id="profile-image">
+                    <img class="image" src="../gifs/puzzle.gif" alt="puzzle">
+                </div><!-- End Col-->
+                <div class="content col-lg-6" id="profile-text">
+                    <p class="py-2">
+                        Step into our world, where we masterfully piece together digital solutions like a perfectly crafted puzzle.<br>Our passion lies in assembling technology's puzzle pieces to empower businesses and individuals for a brighter future.<br>Embracing the challenge of solving intricate digital riddles, we are dedicated to delivering exceptional services that lead to triumphant success and growth.
+                    </p>
+                </div><!-- End Col-->
+            </div><!-- End Row -->
+            <div class="about-content row mt-4">
+                <div class="content col-lg-6">
+                    <img class="journey-image" src="../pictures/journey1.png" alt="journey">
+                </div><!-- End Col-->
+                <div class="content col-lg-6">
+                    <p class="py-2 d-flex align-items-center">
+                        Just like solving a captivating puzzle, our journey has been a thrilling adventure.<br>With each project, we navigate the complexities and intricacies, ensuring that every digital piece fits flawlessly.<br>From the first edge piece to the final touch, we collaborate with clients across diverse industries,<br>understanding their unique perspectives and crafting bespoke solutions.
+                    </p>
+                </div><!-- End Col-->
+            </div><!-- End Row -->
+            <div class="about-content row mt-4 py-2">
+                <div class="services content row d-flex justify-content-center pt-2">
+                    <div class="service row d-flex justify-content-center align-items-center mx-3">
+                        <img class="service-image" src="../pictures/web.png" alt="web">
+                        <h2 class="text-center py-2">Website Development</h2>
+                        <div class="description container-flex py-2">
+                            <h3 class="service-text text-light py-2 px-3"></h3>
+                        </div><!-- End Description -->
+                    </div><!-- End Row-->
+                    <div class="service row d-flex justify-content-center align-items-center mx-3">
+                        <img class="service-image" src="../pictures/ai.png" alt="ai">
+                        <h2 class="text-center py-2">AI & Machine Learning</h2>
+                        <div class="description container-flex py-2">
+                            <h3 class="service-text text-light py-2 px-3"></h3>
+                        </div><!-- End Description -->
+                    </div><!-- End Row-->
+                    <div class="service row d-flex justify-content-center align-items-center mx-3">
+                        <img class="service-image" src="../pictures/ui.png" alt="ui">
+                        <h2 class="text-center py-2">UI/UX Development</h2>
+                        <div class="description container-flex py-2">
+                            <h3 class="service-text text-light py-2 px-3"></h3>
+                        </div>
+                    </div><!-- End Row-->
+                </div><!-- End Row-->
+                <div class="services content row d-flex justify-content-center">
+                    <div class="service row d-flex justify-content-center align-items-center mx-3 mt-5">
+                        <img class="service-image" src="../pictures/ecomm.png" alt="ecomm">
+                        <h2 class="text-center py-2">E-Commerce Solutions</h2>
+                        <div class="description container-flex py-2">
+                            <h3 class="service-text text-light py-2 px-3"></h3>
+                        </div><!-- End Description -->
+                    </div><!-- End Row-->
+                    <div class="service row d-flex justify-content-center align-items-center mx-3 mt-5">
+                        <img class="service-image" src="../pictures/mobile.png" alt="mobile">
+                        <h2 class="text-center py-2">Mobile App Development</h2>
+                        <div class="description container-flex py-2">
+                            <h3 class="service-text text-light py-2 px-3"></h3>
+                        </div><!-- End Description -->
+                    </div><!-- End Row-->
+                </div>
+            </div><!-- End Row -->
+            <div class="about-content row mt-2">
+                <div class="why-us row">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="why-us-content col-lg-6">
+                            <h2>Customer-Centric</h2>
+                            <p class="py-2">Just as puzzles come to life through the creator's vision, we prioritize your goals and requirements. Our customer-centric approach ensures solutions tailored to your puzzle's unique shape.</p>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <img class="why-us-image" src="../pictures/handshake.png" alt="handshake">
+                        </div>
+                    </div><!-- End Row -->
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="why-us-content col-lg-6">
+                            <h2>Tech Enthusiasts</h2>
+                            <p class="py-2">We embrace technology like puzzle enthusiasts embrace challenges. From AI and machine learning to blockchain, we revel in the ever-changing digital puzzle landscape.</p>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                           <img class="why-us-image" src="../pictures/tech.png" alt="tech">
+                        </div>
+                    </div><!-- End Row -->
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="why-us-content col-lg-6">
+                            <h2>Creativity at its Core</h2>
+                            <p class="py-2">Like an artist paints a masterpiece, we infuse creativity into every solution. Our out-of-the-box thinking crafts digital experiences that captivate and delight.</p>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <img class="why-us-image" src="../pictures/creativity.png" alt="creativity">
+                        </div>
+                    </div><!-- End Row -->
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="why-us-content col-lg-6">
+                            <h2>Precision & Reliability</h2>
+                            <p class="py-2">Solving puzzles demands precision, and that's what we bring to every project. Our meticulous attention to detail ensures reliable and polished results.</p>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <img class="why-us-image" src="../pictures/precision.png" alt="precision">
+                        </div>
+                    </div><!-- End Row -->
+                </div><!-- End Why-Us -->
+            </div><!-- End Row -->
+        </section><!-- End About-Us -->
+        <section class="techs">
+           <h1 class="py-2 px-lg-5">Technologies We Use</h1>
+           <div class="container-flex d-flex justify-content-center py-4 w-100">
+             <div class="slider container-flex py-2">
+                <div class="slider-img col-lg-2">
+                    <img src="../pictures/django.png" alt="django">
+                </div>
+                <div class="slider-img col-lg-2">
+                    <img src="../pictures/python.png" alt="python">
+                </div>
+                <div class="slider-img col-lg-2">
+                    <img src="../pictures/node.png" alt="node">
+                </div>
+                <div class="slider-img col-lg-2">
+                    <img src="../pictures/react.png" alt="react">
+                </div>
+                <div class="slider-img col-lg-2">
+                    <img src="../pictures/html.png" alt="html">
+                </div>
+                <div class="slider-img col-lg-2">
+                    <img src="../pictures/css.png" alt="css">
+                </div>
+             </div><!-- End Slider -->
+           </div><!-- End Container-FLex -->
+        </section><!-- End Techs-->
+        <section class="contact">
+            <div class="container-flex mt-4">
+                <div class="cover">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="contact-info col-lg-6">
+                            <h1 class="text-light py-2 mt-4 px-lg-5">Contact Details</h1>
+                            <div class="contact-box container mt-2 px-lg-5">
+                                <h3 class="text-light py-2">Email Address:</h3>
+                                <p class="text-light py-3">xwen151214@gmail.com</p>
+                            </div>
+                            <div class="contact-box container mt-2 px-lg-5">
+                                <h3 class="text-light py-2">Contact Number</h3>
+                                <p class="text-light py-2">0309-1225118</p>
+                            </div>
+                            <div class="contact-box container mt-2 px-lg-5">
+                                <h3 class="text-light py-2">Location:</h3>
+                                <p class="text-light py-2">Karachi</p>
+                            </div>
+                        </div><!-- End Contact-info -->
+                        <div class="contact-form col-lg-6 py-4">
+                            <form class="row d-flex py-2" method="post">
+                                <div class="col-lg-9 py-2">
+                                    <h1 class="text-light py-2">Navigate Your Questions to Us</h1>
+                                </div>
+                                <div class="col-lg-9 py-2">
+                                    <input type="text" name="name" placeholder="Your Name">
+                                </div>
+                                <div class="col-lg-9 py-2">
+                                    <input type="email" name="email" placeholder="Your Email">
+                                </div>
+                                <div class="col-lg-9 py-3">
+                                    <input type="tel" name="number" placeholder="Your Contact Number">
+                                </div>
+                                <div class="col-lg-9 py-3">
+                                    <textarea name="message" placeholder="Your Message" rows="5"></textarea>
+                                </div>
+                                <div class="col-lg-9 py-2">
+                                    <button class="form-submit btn d-flex">
+                                        <div class="col-lg-1 mr-4 px-0">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="col-lg-1 px-0">
+                                            Submit
+                                        </div>
+                                    </button>
+                                </div> 
+                            </form><!-- End Form -->
+                        </div><!-- End Contact-Form -->
+                    </div><!-- End Row>-->
+                </div><!-- End Cover -->
+            </div><!-- End Container-Flex -->
+        </section><!-- End Conatct-->
+        <section class="projects mt-4">
+            <h1 class="text-center py-2 px-lg-5">Recent Projects</h1>
+            <div class="slider container-flex d-flex align-items-center mt-4 py-4">
+                <a title="next" class="slider-control project-control" id="prev-project"><i class="fa fa-angle-double-left"></i></a>
+                <div class="project-box row align-items-center py-2">
+                    <img class="project-img" src="../projects/oracle.jpg" alt="oracle">
+                    <img class="project-cover" src="../pictures/cover3.png" alt="cover">
+                    <div class="project-content col-lg-15">
+                        <h4 class="py-2 px-2">Oracle DB</h4>
+                        <p class="p-0 m-0 px-2">Accessing oracle DB and retreiving data to insert into koha API</p>
+                    </div>
+                </div><!-- End Project-Box -->
+                <div class="project-box row align-items-center py-2">
+                    <img class="project-img" src="../projects/tibco.png" alt="tibco">
+                    <img class="project-cover" src="../pictures/cover3.png" alt="cover">
+                    <div class="project-content col-lg-15">
+                        <h4 class="py-2 px-2">Jasper Reports</h4>
+                        <p class="p-0 m-0 px-2">An interactive application to publish reports in JR server</p>
+                    </div>
+                </div><!-- End Project-Box -->
+                <div class="project-box row align-items-center py-2">
+                    <img class="project-img" src="../projects/bsk.jpeg" alt="bsk">
+                    <img class="project-cover" src="../pictures/cover3.png" alt="cover">
+                    <div class="project-content col-lg-15">
+                        <h4 class="py-2 px-2">BSK</h4>
+                        <p class="p-0 m-0 px-2">A portfolio website to showcase BSK's technical experties</p>
+                    </div>
+                </div><!-- End Project-Box -->
+                <div class="project-box row align-items-center py-2">
+                    <img class="project-img" src="../projects/zeenia.jpg" alt="zeenia">
+                    <img class="project-cover" src="../pictures/cover3.png" alt="cover">
+                    <div class="project-content col-lg-15">
+                        <h4 class="py-2 px-2">Zeenia Travels</h4>
+                        <p class="p-0 m-0 px-2">A touring agent helping you thorugh every step</p>
+                    </div>
+                </div><!-- End Project-Box -->
+                <a title="next" class="slider-control project-control" id="next-project"><i class="fa fa-angle-double-right"></i></a>
+            </div><!-- End Slider -->
+        </section><!-- End Project -->
+    </body><!-- End Body -->
+    <footer>
+        <div class="footer-cover container-flex mt-4 pt-4">
+            <div class="container-flex">
+                <div class="row d-flex justify-content-center align-items-center">
+                  <ul class="quick-links d-flex justify-content-center">
+                    <li class="py-2"><a title="home" class="link" href="#">Home</a></li>
+                    <li class="py-2"><a title="about" class="link" href="#">About Us</a></li>
+                    <li class="py-2"><a title="projects" class="link" href="#">Projects</a></li>
+                    <li class="py-2"><a title="blogs" class="link" href="#">Blogs</a></li>
+                  </ul>
+                </div><!-- End Row -->
+                <div class="row d-flex justify-content-center py-2">
+                    <a title="fb" class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-facebook"></i></a>
+                    <a title="inst" class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-instagram"></i></a>
+                    <a title="lind" class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-linkedin"></i></a>
+                </div><!-- End Row -->
+            </div><!-- End Container-Flex -->
+            <div class="closing container-flex w-100">
+                <div class="row d-flex justify-content-center py-3">
+                   <h2 class="py-2">All Rights Reserved © XWEN</h2>
+                </div><!-- End Row -->
+            </div><!-- End Closing -->
+        </div><!-- End Footer-Container -->
+    </footer><!-- End Footer -->
+</html> 
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="../js/carousel.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/show_hide.js"></script>
+<script src="../js/chatbot.js"></script>
+<script src="../js/slider.js"></script>
